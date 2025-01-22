@@ -1,0 +1,63 @@
+{
+  "openapi": "3.0.0",
+  "paths": {
+    "/": {
+      "get": {
+        "operationId": "AppController_healthCheck",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/contratistas": {
+      "get": {
+        "operationId": "ContratistasController_encontrarContratista",
+        "summary": "Consulta proveedor",
+        "parameters": [
+          {
+            "name": "id",
+            "required": true,
+            "in": "query",
+            "schema": {
+              "example": "1234567890",
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Proveedor encontrado exitosamente"
+          },
+          "400": {
+            "description": "Solicitud incorrecta"
+          },
+          "404": {
+            "description": "Proveedor no encontrado"
+          },
+          "500": {
+            "description": "Error interno del servidor"
+          }
+        }
+      }
+    }
+  },
+  "info": {
+    "title": "Proveedores API MID",
+    "description": "API",
+    "version": "1.0.0",
+    "contact": {}
+  },
+  "tags": [
+    {
+      "name": "API",
+      "description": ""
+    }
+  ],
+  "servers": [],
+  "components": {
+    "schemas": {}
+  }
+}
