@@ -12,7 +12,8 @@ API MID intermediaria entre el cliente ARGOv2 y el Polizas CRUD.
 
 ### Variables de Entorno
 ```shell
-
+ENDP_PARAMETROS_CRUD
+ENDP_POLIZAS_CRUD
 ```
 **NOTA:** Las variables se asignan en una archivo privado .env.
 
